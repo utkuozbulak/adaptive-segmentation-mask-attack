@@ -1,8 +1,11 @@
-# Adaptive Segmentation- Mask Attack
+# Adaptive Segmentation Mask Attack
 
 This repository contains the implementation of _Adaptive Segmentation Mask Attack (ASMA)_, a targeted adversarial example generation method for deep learning segmentation models. This attack was proposed in  "_Impact of Adversarial Examples on Deep Learning Models for Biomedical Segmentation. U. Ozbulak et al._" and published in the 22nd International Conference on Medical Image Computing and Computer Assisted Intervention, MICCAI-2019.
 
 <img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/data/repository_examples/adversarial_optimization.gif?token=AESS2FAUP4VXC6HJGUYD7Z25D6J2Q">
+
+## Citation
+If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available.
 
 ## General Information
 This repository is organized as follows:
@@ -18,16 +21,19 @@ This repository is organized as follows:
   
   __main.py__ - An example way to run the attack on samples taken from the aforementioned dataset.
   
-* **data/** 
+* **data/** - This folder contains a couple of examples for testing purposes.
   
   
+## Requirements:
+```
+torch >= 0.4.0
+torchvision >= 0.1.9
+numpy >= 1.13.0
+PIL >= 1.1.7
+```
   
   
-  
-  
-  
-  
-  
-  
-  ## References
-  [1] 
+## References
+[1] _Estimation of the relative amount of hemoglobin in the cup and neuroretinal rim using stereoscopic color fundus images._ Pena-Betancor C., Gonzalez-Hernandez M., Fumero-Batista F., Sigut J., Medina-Mesa E., Alayon S., Gonzalez M. 
+
+[2] _U-Net: Convolutional networks for biomedical image segmentation._ Ronneberger, O., Fischer, P., Brox, T. 
