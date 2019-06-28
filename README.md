@@ -7,6 +7,14 @@ This repository contains the implementation of _Adaptive Segmentation Mask Attac
 ## Citation
 If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available.
 
+	@article{,
+	  author = {},
+	  title = {},
+	  year = {},
+	  publisher = {},
+	  journal = {}
+	}
+
 ## General Information
 This repository is organized as follows:
 * **src/** contains following python files:
