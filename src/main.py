@@ -6,13 +6,12 @@ from adaptive_attack import AdaptiveSegmentationMaskAttack
 
 if __name__ == '__main__':
     # Glaucoma dataset
-    eye_dataset = EyeDatasetTest('../data/eye_data/image_samples',
-                                 '../data/eye_data/clean_masks')
-
+    eye_dataset = EyeDatasetTest('../data/image_samples',
+                                 '../data/mask_samples')
     # GPU parameters
     DEVICE_ID = 0
 
-    # Load model
+    # Load model, change it to where you download the model to
     model = load_model('../models/eye_pretrained_model.pt')
     model.eval()
     model.cpu()

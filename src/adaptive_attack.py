@@ -39,15 +39,15 @@ class AdaptiveSegmentationMaskAttack:
 
             # \mathds{1}_{\{\mathbf{Y}^{A} \, =\, c\}}:
             optimization_mask = copy.deepcopy(target_mask)
-            optimization_mask[optimization_mask != single_class] = 123456
+            optimization_mask[optimization_mask != single_class] = self. temporary_class_id
             optimization_mask[optimization_mask == single_class] = 1
-            optimization_mask[optimization_mask == 123456] = 0
+            optimization_mask[optimization_mask == self. temporary_class_id] = 0
 
             # \mathds{1}_{\{\arg \max_M(g(\theta, \mathbf{X}_n)) \, \neq \, c\}}:
             prediction_mask = copy.deepcopy(pred_out)[0]
-            prediction_mask[prediction_mask != single_class] = 123456
+            prediction_mask[prediction_mask != single_class] = self. temporary_class_id
             prediction_mask[prediction_mask == single_class] = 0
-            prediction_mask[prediction_mask == 123456] = 1
+            prediction_mask[prediction_mask == self. temporary_class_id] = 1
 
             # Calculate channel loss
             channel_loss = torch.sum(out_channel * optimization_mask * prediction_mask)
@@ -63,6 +63,11 @@ class AdaptiveSegmentationMaskAttack:
             save_prediction_image(target_mask.numpy(), 'target_mask', save_path)
         # Unique classes are needed to simplify prediction loss
         self.unique_classes = unique_class_list
+        # Have a look at calculate_pred_loss to see where this is used
+        self. temporary_class_id = random.randint(0, 999)        
+        while self.temporary_class_id in self.unique_classes:
+            self.temporary_class_id = random.randint(0, 999)   
+            
         # Assume there is no overlapping part for the first iteration
         pert_mul = self.update_perturbation_multiplier(self.beta, self.tau, 0)
         # Get a copy of target mask to use it for stats
