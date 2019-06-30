@@ -36,6 +36,7 @@ This repository is organized as follows:
 
 ## Requirements:
 ```
+python > 3.5
 torch >= 0.4.0
 torchvision >= 0.1.9
 numpy >= 1.13.0
@@ -44,6 +45,6 @@ PIL >= 1.1.7
   
   
 ## References
-[1] _Estimation of the relative amount of hemoglobin in the cup and neuroretinal rim using stereoscopic color fundus images._ Pena-Betancor C., Gonzalez-Hernandez M., Fumero-Batista F., Sigut J., Medina-Mesa E., Alayon S., Gonzalez M. 
+[1]  Pena-Betancor C., Gonzalez-Hernandez M., Fumero-Batista F., Sigut J., Medina-Mesa E., Alayon S., Gonzalez M. _Estimation of the relative amount of hemoglobin in the cup and neuroretinal rim using stereoscopic color fundus images._
 
-[2] _U-Net: Convolutional networks for biomedical image segmentation._ Ronneberger, O., Fischer, P., Brox, T. 
+[2] Ronneberger, O., Fischer, P., Brox, T. _U-Net: Convolutional networks for biomedical image segmentation._
