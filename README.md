@@ -17,7 +17,7 @@ If you find the code in this repository relevant to your research, consider citi
 
 ## General Information
 This repository is organized as follows:
-* **src/** contains following python files:
+* **Code** - *src/* folder contains following python files:
 
   __adaptive_attack.py__ - This file contains the implementation of the main algorithm. Although we have tested the attack in binary segmentation problems, it is designed to work for multi-class problems as well.
 
@@ -29,9 +29,10 @@ This repository is organized as follows:
   
   __main.py__ - An example way to run the attack on samples taken from the aforementioned dataset.
   
-* **data/** - This folder contains a couple of examples for testing purposes.
+* **Data** - *data/* folder contains a couple of examples for testing purposes. The data we used in this study can be taken from [1].
   
-  
+* **Model** - Example model used in this repository can be downloaded from https://www.dropbox.com/s/6ziz7s070kkaexp/eye_pretrained_model.pt . _helper_functions.py_ contains a function to load this file and _main.py_ contains an exaple that uses this model.
+
 ## Requirements:
 ```
 torch >= 0.4.0
