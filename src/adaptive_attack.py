@@ -64,10 +64,10 @@ class AdaptiveSegmentationMaskAttack:
         # Unique classes are needed to simplify prediction loss
         self.unique_classes = unique_class_list
         # Have a look at calculate_pred_loss to see where this is used
-        self. temporary_class_id = random.randint(0, 999)        
+        self. temporary_class_id = random.randint(0, 999)
         while self.temporary_class_id in self.unique_classes:
-            self.temporary_class_id = random.randint(0, 999)   
-            
+            self.temporary_class_id = random.randint(0, 999)
+
         # Assume there is no overlapping part for the first iteration
         pert_mul = self.update_perturbation_multiplier(self.beta, self.tau, 0)
         # Get a copy of target mask to use it for stats
