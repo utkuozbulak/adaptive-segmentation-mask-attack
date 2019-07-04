@@ -1,3 +1,9 @@
+"""
+@author: Utku Ozbulak
+@repository: github.com/utkuozbulak
+@article: Impact of Adversarial Examples on Deep Learning Models for Biomedical Segmentation
+@conference: MICCAI-19
+"""
 # In-repo imports
 from eye_dataset import EyeDatasetTest
 from helper_functions import load_model

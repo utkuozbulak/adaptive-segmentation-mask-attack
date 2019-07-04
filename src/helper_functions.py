@@ -1,3 +1,9 @@
+"""
+@author: Utku Ozbulak
+@repository: github.com/utkuozbulak
+@article: Impact of Adversarial Examples on Deep Learning Models for Biomedical Segmentation
+@conference: MICCAI-19
+"""
 import numpy as np
 from PIL import Image
 import os
