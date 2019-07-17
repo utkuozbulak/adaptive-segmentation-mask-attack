@@ -3,7 +3,7 @@
 This repository contains the implementation of _Adaptive Segmentation Mask Attack (ASMA)_, a targeted adversarial example generation method for deep learning segmentation models. This attack was proposed in  "_Impact of Adversarial Examples on Deep Learning Models for Biomedical Segmentation. U. Ozbulak et al._" and published in the 22nd International Conference on Medical Image Computing and Computer Assisted Intervention, MICCAI-2019.
 
 <br /> 
-<img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/data/repository_examples/adversarial_optimization.gif?token=AESS2FAUP4VXC6HJGUYD7Z25D6J2Q">
+<img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/data/repository_examples/adversarial_optimization.gif">
 
 ## Citation
 If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available.
@@ -18,21 +18,30 @@ If you find the code in this repository relevant to your research, consider citi
 
 ## General Information
 This repository is organized as follows:
-* **Code** - *src/* folder contains following python files:
+* **Code** - *src/* folder contains necessary python files to perform the attack and calculate various stats (i.e., correctness and modification)
 
-  __adaptive_attack.py__ - This file contains the implementation of the main algorithm. Although we have tested the attack in binary segmentation problems, it is designed to work for multi-class problems as well.
-
-  __eye_dataset.py__ - This file contains the pytorch dataset for the Glaucoma dataset[1] used in this study.
-  
-  __helper_functions.py__ - There a number of functions used in the respository such as calculating L2 distance, IOU etc. This file contains these functions.
-  
-  __unet_model.py__ - Unet model[2] used in this study is here.
-  
-  __main.py__ - An example way to run the attack on samples taken from the aforementioned dataset.
-  
 * **Data** - *data/* folder contains a couple of examples for testing purposes. The data we used in this study can be taken from [1].
   
 * **Model** - Example model used in this repository can be downloaded from https://www.dropbox.com/s/6ziz7s070kkaexp/eye_pretrained_model.pt . _helper_functions.py_ contains a function to load this file and _main.py_ contains an exaple that uses this model.
+
+## Frequently Asked Questions (FAQ):
+
+* How can I run the demo? 
+
+  **1-** Download the model from https://www.dropbox.com/s/6ziz7s070kkaexp/eye_pretrained_model.pt
+  
+  **2-** Create a folder called _model_ on the same level as _data_ and _src_, put the model under this (_model_) folder.
+  
+  **3-** Run _main.py_.
+
+* Would this attack work in multi-class segmentation models?
+
+  Yes, given that you provide a proper mask.
+  
+* Does the code require modifications in order to make it work for multi-class segmentation models?
+
+  No (probably, depending on your model/input).
+  
 
 ## Requirements:
 ```
