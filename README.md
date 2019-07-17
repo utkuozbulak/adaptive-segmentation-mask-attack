@@ -6,7 +6,7 @@ This repository contains the implementation of _Adaptive Segmentation Mask Attac
 <img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/data/repository_examples/adversarial_optimization.gif">
 
 ## Citation
-If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available.
+If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available here.
 
 	@article{,
 	  author = {},
@@ -36,7 +36,7 @@ This repository is organized as follows:
 
 * Would this attack work in multi-class segmentation models?
 
-  Yes, given that you provide a proper mask.
+  Yes, given that you provide a proper target mask.
   
 * Does the code require modifications in order to make it work for multi-class segmentation models?
 
@@ -51,8 +51,7 @@ torchvision >= 0.1.9
 numpy >= 1.13.0
 PIL >= 1.1.7
 ```
-  
-  
+
 ## References
 [1]  Pena-Betancor C., Gonzalez-Hernandez M., Fumero-Batista F., Sigut J., Medina-Mesa E., Alayon S., Gonzalez M. _Estimation of the relative amount of hemoglobin in the cup and neuroretinal rim using stereoscopic color fundus images._
 
