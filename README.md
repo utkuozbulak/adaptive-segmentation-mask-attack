@@ -24,7 +24,7 @@ This repository is organized as follows:
   
 * **Model** - Example model used in this repository can be downloaded from https://www.dropbox.com/s/6ziz7s070kkaexp/eye_pretrained_model.pt . _helper_functions.py_ contains a function to load this file and _main.py_ contains an exaple that uses this model.
 
-## Frequently Asked Questions (FAQ):
+## Frequently Asked Questions (FAQ)
 
 * How can I run the demo? 
 
@@ -43,7 +43,7 @@ This repository is organized as follows:
   No (probably, depending on your model/input).
   
 
-## Requirements:
+## Requirements
 ```
 python > 3.5
 torch >= 0.4.0
