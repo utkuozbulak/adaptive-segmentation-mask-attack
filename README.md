@@ -36,11 +36,11 @@ This repository is organized as follows:
 
 * Would this attack work in multi-class segmentation models?
 
-  Yes, given that you provide a proper target mask.
+  Yes, given that you provide a proper target mask, model etc.
   
-* Does the code require modifications in order to make it work for multi-class segmentation models?
+* Does the code require any modifications in order to make it work for multi-class segmentation models?
 
-  No (probably, depending on your model/input).
+  No (probably, depending on your model/input). At least the attack itself (adaptive_attack.py) should not require major modifications on its logic.
   
 
 ## Requirements
