@@ -5,17 +5,6 @@ This repository contains the implementation of the _Adaptive Segmentation Mask A
 <br /> 
 <img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/data/repository_examples/adversarial_optimization.gif">
 
-## Citation
-If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available here.
-
-	@article{,
-	  author = {},
-	  title = {},
-	  year = {},
-	  publisher = {},
-	  journal = {}
-	}
-
 ## General Information
 This repository is organized as follows:
 * **Code** - *src/* folder contains necessary python files to perform the attack and calculate various stats (i.e., correctness and modification)
