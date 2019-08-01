@@ -1,7 +1,7 @@
 """
 @author: Utku Ozbulak
-@repository: github.com/utkuozbulak
-@article: Impact of Adversarial Examples on Deep Learning Models for Biomedical Segmentation
+@repository: github.com/utkuozbulak/adaptive-segmentation-mask-attack
+@article: Impact of Adversarial Examples on Deep Learning Models for Biomedical Image Segmentation
 @conference: MICCAI-19
 """
 import copy
@@ -104,7 +104,7 @@ class AdaptiveSegmentationMaskAttack:
             out_grad.backward()
 
             # Add perturbation to image to optimize
-            perturbed_im = image_to_optimize.data + (image_to_optimize.grad) * pert_mul
+            perturbed_im = image_to_optimize.data + (image_to_optimize.grad * pert_mul)
             # Do another forward pass to calculate new pert_mul
             perturbed_im_out = self.model(perturbed_im)
 
