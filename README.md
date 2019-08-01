@@ -32,7 +32,7 @@ This repository is organized as follows:
   No (probably, depending on your model/input). At least the attack itself (adaptive_attack.py) should not require major modifications on its logic.
  
  ## Citation
-If you find the code in this repository relevant to your research, consider citing our paper. Also, feel free to use any visuals available here.
+If you find the code in this repository useful for your research, consider citing our paper. Also, feel free to use any visuals available here.
 
     @article{ozbulak2019impact,
         author = {Utku Ozbulak and
