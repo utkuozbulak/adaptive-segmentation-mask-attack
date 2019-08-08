@@ -2,8 +2,6 @@
 
 This repository contains the implementation of the _Adaptive Segmentation Mask Attack (ASMA)_, a targeted adversarial example generation method for deep learning segmentation models. This attack was proposed in the paper "_Impact of Adversarial Examples on Deep Learning Models for Biomedical Image Segmentation._" by _U. Ozbulak et al._ and (will be) published in the 22nd International Conference on Medical Image Computing and Computer Assisted Intervention, MICCAI-2019. ([Link to the paper](https://arxiv.org/abs/1907.13124))
 
-
-<br /> 
 <img src="https://raw.githubusercontent.com/utkuozbulak/adaptive-segmentation-mask-attack/master/media/asma.png">
 
 ## General Information
