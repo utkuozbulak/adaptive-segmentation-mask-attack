@@ -33,15 +33,15 @@ This repository is organized as follows:
 ## Citation
 If you find the code in this repository useful for your research, consider citing our paper. Also, feel free to use any visuals available here.
 
-    @article{ozbulak2019impact,
-        author = {Utku Ozbulak and
-                  Arnout Van Messem and 
-                  Wesley De Neve},
-        title = {Impact of Adversarial Examples on Deep Learning Models for Biomedical Image Segmentation},
-        journal={Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2019},
-        year = {2019},
-        eprint    = {1907.13124}
+    @inproceedings{ozbulak2019impact,
+        title={Impact of Adversarial Examples on Deep Learning Models for Biomedical Image Segmentation},
+        author={Ozbulak, Utku and Van Messem, Arnout and De Neve, Wesley},
+        booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+        pages={300--308},
+        year={2019},
+        organization={Springer}
     }
+
 
 ## Requirements
 ```
