@@ -28,9 +28,9 @@ if __name__ == '__main__':
     beta = 1e-6
 
     # Read images
-    im_name1, im12, mask12 = eye_dataset[0]
-    im_name2, im22, mask22 = eye_dataset[1]
+    im_name1, im1, mask2 = eye_dataset[0]
+    im_name2, im2, mask2 = eye_dataset[1]
 
     # Perform attack
     adaptive_attack = AdaptiveSegmentationMaskAttack(DEVICE_ID, model, tau, beta)
-    adaptive_attack.perform_attack(im22, mask22, mask12, [0, 1])
+    adaptive_attack.perform_attack(im2, mask2, mask1, [0, 1])
