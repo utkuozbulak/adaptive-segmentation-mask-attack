@@ -28,7 +28,7 @@ if __name__ == '__main__':
     beta = 1e-6
 
     # Read images
-    im_name1, im1, mask2 = eye_dataset[0]
+    im_name1, im1, mask1 = eye_dataset[0]
     im_name2, im2, mask2 = eye_dataset[1]
 
     # Perform attack

@@ -7,6 +7,7 @@
 import numpy as np
 import glob
 from PIL import Image
+import copy
 
 import torch
 from torch.utils.data.dataset import Dataset
@@ -51,6 +52,7 @@ class EyeDatasetTest(Dataset):
         msk_as_np = np.asarray(msk_as_im)
         # Crop mask
         msk_as_np = msk_as_np[70:70+388, 20:-20]
+        msk_as_np = copy.copy(msk_as_np)
         msk_as_np.setflags(write=1)
         # Just in case if there are some gray-ish artifacts left in the image
         msk_as_np[msk_as_np > 20] = 255
